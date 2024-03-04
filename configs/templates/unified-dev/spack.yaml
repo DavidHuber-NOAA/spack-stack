@@ -25,6 +25,7 @@ spack:
       - ufs-srw-app-env
       #- ufs-utils-env
       - ufs-weather-model-env
+      - emc-verif-global-env
       #- upp-env
       #- ww3-env
 

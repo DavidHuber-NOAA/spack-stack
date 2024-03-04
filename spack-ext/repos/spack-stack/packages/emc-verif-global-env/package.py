@@ -16,18 +16,19 @@ class EmcVerifGlobalEnv(BundlePackage):
 
     version("1.0.0")
 
-    depends_on("python")
     depends_on("netcdf-c")
     depends_on("netcdf-fortran")
     depends_on("nco")
     depends_on("prod-util")
     depends_on("grib-util")
-    # Test grads
-    # depends_on('grads')
+    depends_on("bufr")
     depends_on("wgrib2")
-    depends_on("python")
-    depends_on("prod-util")
     depends_on("met")
+
+    depends_on("ufs-pyenv")
+    depends_on("py-cartopy", type="run")
+    depends_on("py-matplotlib", type="run")
+
     depends_on("metplus")
 
     # There is no need for install() since there is no code.

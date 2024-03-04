@@ -39,8 +39,6 @@ class GlobalWorkflowEnv(BundlePackage):
     depends_on("sigio")
     depends_on("bufr")
     depends_on("wgrib2")
-    depends_on("met")
-    depends_on("metplus")
     depends_on("gsi-ncdiag")
     depends_on("crtm@2.4.0.1")
 
